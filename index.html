@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="index.css"/>
+		<title>Instrument Drag and Drag app</title>
+	<link rel="stylesheet" href="responsive.css">
+</head>
+	<body >
+		<section class="theme"><img draggable="false" src="darkness.svg" class="theme-logo" alt="dark"/></section>
+
+		<section class="main-container">
+			<section class="unarranged-container container">
+				<h1 class="instrumentCount">Put / Drag and Drop instruments inside right containers</h1>
+				<button draggable="true" class="instrument" id="drum"><img draggable="false" src="drum-img.svg" class="instrument-img"/></button>
+
+				<button draggable="true" class="instrument" id="osc"><img draggable="false" src="osc-img.svg" class="instrument-img"/></button>
+				<button draggable="true" class="instrument" id="mallet"><img draggable="false" src="mallet.svg" class="instrument-img"/></button>
+				<button draggable="true" class="instrument" id="synth"><img draggable="false" src="synth.svg" class="instrument-img"/></button>
+			</section>
+
+			<section class="container-wrapper container">
+
+				<section class="instrument-wrapper">
+					<h1>Drum</h1>
+					<section class="instrument-container drum-container" id="drum-container">
+					</section>
+				</section>
+				
+				<section class="instrument-wrapper">
+					<h1>Oscillator</h1>
+					<section class="instrument-container osc-container" id="osc-container">
+					</section>
+				</section>
+				<section class="instrument-wrapper">
+					<h1>Mallet</h1>
+					<section class="instrument-container mallet-container" id="mallet-container">
+					</section>
+				</section>
+
+				<section class="instrument-wrapper">
+					<h1>Synthesizer</h1>
+					<section class="instrument-container synth-container" id="synth-container">
+					</section>
+
+				</section>
+			</section>
+		</section>	
+			
+				
+		<script src="index.js"></script>
+	<script src="touch-dnd.js"></script>
+</body>
+</html>
